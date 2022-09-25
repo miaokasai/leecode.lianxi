@@ -1,0 +1,10 @@
+class Solution {
+    public List<Integer> getRow(int rowIndex) {
+         vector<int> dp(rowIndex+1, 1); 
+        for(int i=1;i<=rowIndex;i++) 
+            dp[i] = dp[i-1] * 1LL * (rowIndex-i+1) / i; 
+        return dp;
+    }
+};
+    }
+}
